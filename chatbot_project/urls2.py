@@ -19,5 +19,6 @@ from . import views
 urlpatterns = [
     #path('admin/', views.index,name = 'index'),
     path('', views.index,name='index'),
-    path('home/', views.chatBot,name='chatBot')
+    path('home/', views.chatBot,name='chatBot'),
+    path('botia/', views.botia,name='botia')
 ]

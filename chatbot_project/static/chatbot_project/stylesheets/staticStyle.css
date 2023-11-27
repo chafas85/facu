@@ -11,14 +11,7 @@
       box-sizing: border-box;
     }
 
-    body {
-      background-color: #f8f8f8;
-      display: flex;
-      flex-direction: column;
-      flex-wrap: nowrap;
-      justify-content: space-evenly;
-      align-items: center;
-    }
+
 
     .showBot {
       position: absolute;
@@ -30,9 +23,9 @@
       border: none;
       border-radius: var(--chatBot_windowCommonRadius);
       outline: none;
-      background-color: dodgerblue;
+      background-color: #9900FF;
       color: #f8f8f8;
-      box-shadow: 10px 10px 5px #aaaaaa;
+      box-shadow: 1px 1px 6px #616161;
       cursor: pointer;
     }
 
@@ -45,9 +38,9 @@
       height: 80vh;
       display: flex;
       flex-direction: column;
-      box-shadow: 10px 10px 5px #aaaaaa;
-      background-color: dodgerblue;
-      border: 2px solid dodgerblue;
+      box-shadow: 1px 1px 6px #616161;
+      background-color: #9900FF;
+      border: 2px solid #9900FF;
       border-radius: var(--chatBot_windowCommonRadius);
       z-index: var(--chatBot_ZIndex);
     }
@@ -101,7 +94,7 @@
     }
 
     .bot_message {
-      background-color: dodgerblue;
+      background-color: #9900FF;
       padding: 10px;
       color: white;
       width: fit-content;
@@ -162,14 +155,14 @@
       border: none;
       border-radius: 0px 0px 5px 0px;
       outline: none;
-      background-color: dodgerblue;
+      background-color: #ff14b1;;
       color: white;
       cursor: pointer;
       transition: background-color 0.3s ease;
     }
 
     .footer button:hover {
-      background-color: blue;
+      background-color: #ff3BD5
     }
 
     .footer button:disabled {
@@ -177,7 +170,7 @@
     }
 
     .showBot:hover {
-      background-color: blue;
+      background-color: #9900FF;
     }
 
     .hideBot {
@@ -185,7 +178,7 @@
       font-size: 18px;
       border: none;
       outline: none;
-      background-color: dodgerblue;
+      background-color: #9900FF;
       color: white;
       cursor: pointer;
     }

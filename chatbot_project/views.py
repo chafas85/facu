@@ -22,9 +22,22 @@ import tensorflow
 from tensorflow.keras import Sequential
 from tensorflow.keras.layers import Dense, Dropout
 
+
+
+
 def index(request):
    return render(request , 'chatbot_project/index.htm')
 
+def botia(request):
+    # Obtén el nombre desde el URL usando request.GET
+    
+    nombre = request.GET.get('nombre', '')
+
+    # Crea un contexto con la variable que deseas pasar a la plantilla
+    contexto = {'nombre': nombre}
+
+    # Renderiza la plantilla y pasa el contexto
+    return render(request, 'chatbot_project/chatbot.htm', contexto)
 
 def chatBot(request):
    query = str(request.GET.get("query"))
@@ -36,8 +49,10 @@ def chatBot(request):
 
    words=[]
    classes=[]
-   documents=[]
-   stop_words=['is','and','the','a','are','i','it']
+   documents=[]   
+   stop_words=['es', 'y', 'el', 'la', 'un', 'una', 'en', 'se', 'lo', 'los', 'las', 'por', 'para', 'con', 'del', 'al', 'como', 'más', 'pero', 'sus', 'este', 'esta', 'entre', 'cuando', 'muy', 'sin', 'sobre', 'también', 'me', 'hasta', 'hay', 'donde', 'quien', 'desde', 'todo', 'nos', 'durante', 'todos', 'uno', 'les', 'ni', 'contra', 'otros', 'ese', 'eso', 'ante', 'ellos', 'ella', 'ellas', 'nosotros', 'vosotros', 'usted', 'ustedes', 'aquel', 'aquella', 'aquellas', 'aquellos', 'conmigo', 'contigo', 'consigo', 'consigo', 'mí', 'ti', 'si', 'no', 'sí', 'tal', 'cual', 'cada', 'cuales', 'esto', 'aquello', 'estos', 'estas', 'aquellos', 'aquellas']
+   
+  
    cleaned_word=[]
 
    for intent in readobj['intents']:
@@ -138,7 +153,7 @@ def chatBot(request):
          #     break
       return result
 
-   print(" Aapi is Running ! ")
+   print("Facu is Running ! ")
    message = query
    ints = predict_intent_tag(message)
    bot_response = get_response(ints, readobj)

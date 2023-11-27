@@ -1,164 +1,743 @@
 {
   "intents": [
     {
-      "tag": "greetings1",
+      "tag": "saludo1",
       "patterns": [
-        "hi how are you?",
-        "hello",
-        "hi",
+        "¡hola! ¿cómo estás?",
         "hola",
-        "howdy",
-        "greetings",
-        "hey"
+        "¡hola!",
+        "¡saludos!",
+        "hola, ¿qué tal?",
+        "buenos días",
+        "buenas tardes",
+        "buenas noches"
       ],
       "responses": [
-        "Hello! How can I help you today?",
-        "Hello :)"
-      ]
-
-    },
-    {
-      "tag":"greetings2",
-      "patterns": [
-        "how are you doing?",
-        "how are you?",
-        "hi how are you?",
-        "hello how are you?"
-      ],
-      "responses": [
-        "I'm fine what about you?",
-        "Thanks for asking! I'm excellent. How about you?",
-        "Fine, thanks. What do you got for me today?"
+        "¡Hola! ¿En qué puedo ayudarte hoy?",
+        "¡Hola! :)"
       ]
     },
     {
-      "tag": "name",
+      "tag":"saludo2",
       "patterns": [
-        "what is your name?",
-        "what should I call you?",
-        "who are you?"
+        "¿cómo estás?",
+        "como estas",
+        "¡Hola! ¿Cómo estás?",
+        "¿qué tal?",
+        "Qué tal",
+        "¿Cómo te va?",
+        "como te va"
       ],
       "responses": [
-        "I'm Aapi and I'm here to help you out ;)"
+        "Estoy bien, ¿y vos?",
+        "¡Gracias por preguntar! Estoy excelente. ¿Y vos?",
+        "Bien, gracias. ¿Qué tienes para mí hoy?"
       ]
     },
     {
-      "tag":"help",
+      "tag": "nombre",
       "patterns": [
-        "help",
-        "help!"
+        "¿Cuál es tu nombre?",
+        "¿Cómo debo llamarte?",
+        "¿Quién eres?",
+        "Dime tu nombre",
+        "Nombre",
+        "Tu nombre"
+      ],
+      "responses": [
+        "Soy Facu y estoy aquí para ayudarte ;)"
+      ]
+    },
+    {
+      "tag":"ayuda",
+      "patterns": [
+        "ayuda",
+        "aiuda",
+        "¡ayuda!"
       ],
       "responses":[
-        "Ok, you can ask me about:<br> Admission process for degree, PG, Junior. <br>College contact details.<br>Extra curricular activities.<br> Exam details.<br> and about placements."
+        "De acuerdo, puedes preguntarme acerca de:<br> Proceso de inscripción, información de becas. <br> Ubicación, Horario, Contacto <br> Actividades extracurriculares ."
       ]
     },
-    {
-      "tag": "admission-degree",
-      "patterns": [
-        "what is the admission process for degree?",
-        "how to take admission for degree?",
-        "i want to take admission for degree"
-      ],
-      "responses": [
-        "https://kirticollege.edu.in/category/degree-admission-notices/"
-      ]
-    },
-    {
-      "tag": "admission-pg",
-      "patterns": [
-        "what is the admission process for PG?",
-        "how to take admission for Post?",
-        "i want to take admission for PG"
-      ],
-      "responses": [
-        "https://kirticollege.edu.in/category/post-graduation-notices/"
-      ]
-    },
-    {
-      "tag": "admission-junior",
-      "patterns": [
-        "what is the admission process for junior?",
-        "how to take admission for junior?",
-        "i want to take admission for junior"
-      ],
-      "responses": [
-        "https://kirticollege.edu.in/#"
-      ]
-    },
-    {
-      "tag": "services",
-      "patterns": [
-        "what is the college number?",
-        "what is the college staff number?",
-        "what is the college contact?",
-        "what is the contact details?",
-        "how to contact college?"
-      ],
-      "responses": [
-        "https://kirticollege.edu.in/contact-us/"
-      ]
-    },
-    {
-      "tag": "sport",
-      "patterns": [
-        "is sports available in college?",
-        "is NCC available in college?",
-        "is NSS available in college?",
-        "what extra curricular activities are there in college?"
-      ],
-      "responses": [
-        "Please contact college"
-      ]
-    },
-    {
-      "tag": "exam",
-      "patterns": [
-        "when is my exam?",
-        "give me exam details"
-      ],
-      "responses": [
-        "https://livestudent.deccansociety.org/"
-      ]
-    },
-    {
-      "tag": "placement",
-      "patterns": [
-        "what is the placement process?",
-        "which companies comes to college?",
-        "how to seat for on campus placement?",
-        "college placement reviews ? "
-      ],
-      "responses": [
-        "Contact Collage Placement Cell"
-      ]
-    },
-    {
-      "tag": "goodbye",
-      "patterns": [
-        "good Bye Aapi",
-        "see You later",
-        "till next time",
-        "meet you later"
-      ],
-      "responses": [
-        "See you, Have a nice day :)",
-        "Bye,Come back soon! ",
-        "Thanks For Asking! "
-      ]
-    },
-    {
-      "tag": "noans",
-      "patterns": [
-        "why",
-        "how",
-        "when",
-        "I",
-        "you"
-      ],
-      "responses": [
-        "Hey there!, I'm still learning stuff can you please elaborate it?",
-        "You know, according to my lawyer, I don't have to answer that."
-      ]
-    }
+      {
+        "tag": "despedida",
+        "patterns": [
+          "Adiós Facu",
+          "adios Facu",
+          "chau",
+          "Nos vemos más tarde",
+          "Hasta la próxima",
+          "Nos vemos más tarde"
+        ],
+        "responses": [
+          "¡Hasta luego, que tengas un buen día!",
+          "Adiós, ¡vuelve pronto!",
+          "Gracias por preguntar. ¡Hasta pronto!"
+        ]
+      },
+      {
+        "tag": "sin-respuesta",
+        "patterns": [
+          "¿Por qué?",
+          "¿Cómo?",
+          "¿Cuándo?",
+          "Yo",
+          "tú",
+          "Explícame",
+          "Háblame",
+          "No sé",
+          "No entiendo"
+        ],
+        "responses": [
+          "¡Hola! Todavía estoy aprendiendo cosas, ¿puedes explicarlo por favor?",
+          "Sabes, según mi abogado, no tengo que responder eso."
+        ]
+      },
+      {
+        "tag": "requisitos",
+        "patterns": [
+          "requisitos inscripción carrera Abogacía",
+          "requisitos inscripción Abogacía",
+          "requisitos inscripcion",
+          "requisitos",
+          "inscripcion",
+          "¿Cuáles son los requisitos para inscribirme en Abogacía?",
+          "¿Qué necesito para inscribirme en la carrera de Abogacía?",
+          "Requisitos para comenzar la carrera de Abogacía"
+        ],
+        "responses": [
+          "Para realizar la inscripción a la carrera de Abogacía, se deben presentar los siguientes requisitos:<br> Realizar la Preinscripción<br> Fotocopia de D.N.I.<br> 2 fotos (4×4).<br> Título secundario o constancia de título en trámite (sin adeudar materias) y fotocopia del libro matriz autenticado por el establecimiento.<br> Libreta Universitaria (adquirirla en Maipú 1181 -Secretaría de Extensión)."
+        ]
+      },
+      {
+        "tag": "salida_abogacia",
+        "patterns": [
+          "salida laboral abogacía",
+          "trabajo abogado",
+          "oportunidades abogacía",
+          "¿Qué trabajos puedo encontrar siendo abogado?",
+          "perspectivas laborales en abogacía",
+          "futuro profesional como abogado"
+        ],
+        "responses": [
+          "Los abogados tienen muchas oportunidades laborales. Pueden trabajar en estudios legales, empresas como asesores legales, en el gobierno, mediando conflictos o como funcionarios judiciales."
+        ]
+      },
+      {
+        "tag": "salida_criminalistica",
+        "patterns": [
+          "salida laboral criminalística",
+          "trabajo criminalista",
+          "oportunidades criminalística",
+          "¿Qué trabajos puedo encontrar siendo licenciado en Criminalística?",
+          "perspectivas laborales en criminalística",
+          "Futuro profesional como criminalista"
+        ],
+        "responses": [
+          "Los licenciados en Criminalística pueden trabajar en fuerzas de seguridad, como peritos judiciales, investigadores privados o en consultoría de seguridad. También pueden enseñar o trabajar en análisis de políticas criminales."
+        ]
+      },
+      {
+        "tag": "salida_relaciones_internacionales",
+        "patterns": [
+          "salida laboral relaciones internacionales",
+          "trabajo relaciones internacionales",
+          "oportunidades relaciones internacionales",
+          "¿Qué trabajos puedo encontrar siendo graduado en Relaciones Internacionales?",
+          "perspectivas laborales en relaciones internacionales",
+          "futuro profesional como graduado en Relaciones Internacionales"
+        ],
+        "responses": [
+          "Los graduados en Relaciones Internacionales pueden trabajar en diplomacia, organizaciones internacionales, ONGs, empresas, periodismo internacional, consultoría en relaciones internacionales y más."
+        ]
+      },
+      {
+        "tag": "salida_abogacia",
+        "patterns": [
+          "salida laboral abogacía",
+          "trabajo abogado",
+          "trabajo abogada",
+          "oportunidades abogacía",
+          "¿Qué empleos puedo conseguir siendo abogado?",
+          "perspectivas laborales en abogacía",
+          "futuro profesional como abogado"
+        ],
+        "responses": [
+          "Los abogados tienen muchas oportunidades laborales. Pueden trabajar en estudios legales, empresas como asesores legales, en el gobierno, mediando conflictos o como funcionarios judiciales."
+        ]
+      },
+      {
+        "tag": "salida_criminalistica",
+        "patterns": [
+          "salida laboral criminalística",
+          "trabajo criminalista",
+          "oportunidades criminalística",
+          "¿qué empleos puedo conseguir siendo licenciado en Criminalística?",
+          "perspectivas laborales en criminalística",
+          "futuro profesional como criminalista"
+        ],
+        "responses": [
+          "Los licenciados en Criminalística pueden trabajar en fuerzas de seguridad, como peritos judiciales, investigadores privados o en consultoría de seguridad. También pueden enseñar o trabajar en análisis de políticas criminales."
+        ]
+      },
+      {
+        "tag": "salida_relaciones_internacionales",
+        "patterns": [
+          "salida laboral relaciones internacionales",
+          "trabajo relaciones internacionales",
+          "oportunidades relaciones internacionales",
+          "¿Qué empleos puedo conseguir siendo graduado en Relaciones Internacionales?",
+          "perspectivas laborales en relaciones internacionales",
+          "futuro profesional como experto en relaciones internacionales"
+        ],
+        "responses": [
+          "Los graduados en Relaciones Internacionales pueden trabajar en diplomacia, organizaciones internacionales, ONGs, empresas, periodismo internacional, consultoría en relaciones internacionales y más."
+        ]
+      },
+      {
+        "tag": "regularidad_materias",
+        "patterns": [
+          "regularidad materias",
+          "regularidad",
+          "como obtener regularidad",
+          "obtener regularidad",
+          "¿Cómo puedo obtener la regularidad en las materias?",
+          "¿Qué debo hacer para tener regularidad en mis asignaturas?",
+          "requisitos para obtener regularidad académica"
+        ],
+        "responses": [
+          "Para adquirir la regularidad en las asignaturas, debes rendir 3 exámenes parciales y aprobar al menos 2 de ellos. Además, necesitas aprobar el porcentaje de trabajos prácticos que cada cátedra determine en la programación."
+        ]
+      },
+      {
+        "tag": "promocion_materias",
+        "patterns": [
+          "Promoción de materias",
+          "Cómo promocionar una materia",
+          "Requisitos para promoción",
+          "promoción",
+          "promocion",
+          "promocionar"
+        ],
+        "responses": [
+          "Para promocionar una materia, necesitas aprobar al menos 2 parciales con una nota de 7 puntos o más en cada uno. Tu calificación puede ser el promedio de ambos. También debes cumplir con las condiciones específicas que cada cátedra defina, indicadas en la programación anual."
+        ]
+      },
+      {
+        "tag": "pase_universitario",
+        "patterns": [
+          "¿Qué necesito para un pase de otra universidad?",
+          "pase",
+          "Requisitos pase interuniversitario"
+        ],
+        "responses": [
+          "Para ingresar a la facultad con pase interuniversitario, necesitas cumplir con los siguientes requisitos:\n- Realizar la Preinscripción\n- Fotocopia de D.N.I.\n- 2 fotos (4×4)\n- Título secundario o constancia de título en trámite (sin adeudar materias) y fotocopia del libro matriz autenticado por el establecimiento\n- Libreta Universitaria (adquirirla en Maipú 1181 -Secretaría de Extensión)\n- Documentación de baja de matrícula de la universidad de origen."
+        ]
+      },
+      {
+        "tag": "plan_estudios_abogacia",
+        "patterns": [
+          "¿que se estudia en abogacía?",
+          "materias abogacía",
+          "materias abogacia",
+          "plan de estudios abogacia"
+        ],
+        "responses": [
+          "Plan de Estudios - Materias de la Carrera Abogacía (Plan 2018):<br>1º Año<br>- Problemática del Conocimiento Científico y Metodología de la Investigación<br>- Evolución Institucional del Derecho<br>- Introducción a la Sociología<br>- Introducción al Derecho<br>- Taller de Producción y Comprensión de texto<br>- Teoría del Estado<br>- Derecho Privado (Parte general)<br>- Derecho Constitucional DD HH I<br>- Teoría del Conflicto y Métodos Alternativos de Resolución<br><br>2º Año<br>- Taller de Negociación y Métodos de Resolución de Conflictos<br>- Derecho Público Provincial y Municipal<br>- Derecho de las Obligaciones<br>- Derecho Constitucional DD HH II<br>- Economía Política<br>- Taller de Derecho Procesal Constitucional<br>- Derecho Internacional Público y de la Integración<br>- Contratos (Parte general)<br>- Derecho Penal (Parte general)<br>- Filosofía del Derecho<br><br>3º Año<br>- Taller de Investigación y Producción Científica<br>- Derecho Administrativo<br>- Contratos - (Parte Especial)<br>- Derecho Penal - (Parte Especial)<br>- Derecho de Daños<br>- Taller de Derecho Procesal Administrativo<br>- Derecho del Trabajo<br>- Derecho Reales y Propiedad intelectual e Industrial<br>- Teoría General del Proceso y Derecho Procesal Civil y Comercial<br><br>4º Año<br>- Derecho del Consumidor y del Usuario<br>- Taller de Práctica Procesal Civil y Comercial<br>- Derecho Colectivo del Trabajo y la Seguridad Social<br>- Derecho de Familia<br>- Derecho Procesal Penal<br>- Personas Jurídicas Civiles y Comerciales<br>- Taller de Practica Procesal Penal<br>- Régimen Jurídico de los RR NN y Protección Jurídica del Medio Ambiente<br>- Derecho de las Sucesiones<br>- Derecho de los Transportes y de las Comunicaciones<br>- Derecho Concursal<br><br>5º Año<br>- Taller de Litigación Oral<br>- Finanzas Públicas y Derecho Tributario<br>- Derecho Minero y de la Energía<br>- Derecho Internacional Privado<br>- Derecho Bancario y Títulos<br>- Inglés Jurídico<br>- Práctica Profesional Supervisada"
+        ]
+      },
+      {
+        "tag": "plan_estudios_criminalistica",
+        "patterns": [
+          "plan de estudios criminalistica",
+          "materias criminalistica",
+          "plan de estudios criminalística",
+          "materias criminalística"
+        ],
+        "responses": [
+          "Plan de Estudios - Materias de la Licenciatura en Criminalística:<br>1º Año<br>- Criminalística I<br>- Matemática I<br>- Química I<br>- Introducción al Derecho<br>- Criminalística II<br>- Matemática II<br>- Química II<br>- Derecho Constitucional<br>- Fotografía<br><br>2º Año<br>- Física I<br>- Accidentología y Legislación Vial<br>- Planimetría<br>- Derecho Privado<br>- Medicina Forense<br>- Física II<br>- Balística I<br>- Inglés Técnico<br>- Derecho Procesal Civil<br>- Estadística Aplicada<br><br>3º Año<br>- Balística II<br>- Informática Forense<br>- Accidentología y Mecánica Forense<br>- Papiloscopía I<br>- Derecho Penal<br>- Documentología I<br>- Derecho Procesal Penal<br>- Toxicología<br>- Papiloscopía II<br>- Práctica Pericial Accidentológica<br>- Título Intermedio de Técnico/a Perito en Accidentología Vial<br><br>4º Año<br>- Balística III<br>- Documentología II<br>- Ética Profesional<br>- Metodología Profesional<br>- Investigación Científica del Lugar del Hecho<br>- Criminología<br>- Documentología III<br>- Práctica Pericial<br>- Trabajo Final"
+        ]
+      },
+      {
+        "tag": "plan_estudios_relaciones_internacionales",
+        "patterns": [
+          "plan de estudios relaciones internacionales",
+          "materias relaciones internacionales"
+        ],
+        "responses": [
+          "Plan de Estudios - Materias de la Licenciatura en Relaciones Internacionales:<br>1º Año<br>- Genealogía del Sistema Internacional<br>- Derecho Constitucional y Derechos Humanos<br>- Genealogía de las Ciencias Sociales<br>- Historia del Pensamiento Político I<br>- Economía de las Sociedades Humanas<br>- Teoría de las Relaciones Internacionales I<br>- Historia Política Argentina<br>- Teoría Social Clásica<br>- Historia del Pensamiento Político II<br>- Historia del Pensamiento Económico<br>- Introducción al Estudio de la Realidad Social<br><br>2º Año<br>- Procesos Sociales Globales<br>- Procesos Sociales Latinoamericanos<br>- Epistemología de las Ciencias Sociales<br>- Historia del Pensamiento Político III<br>- Macroeconomía y Economía Internacional<br>- Teoría Social Moderna<br>- Teoría Social Latinoamericana<br>- Teoría de las Relaciones Internacionales II<br>- Teoría Social Contemporánea<br>- Teoría del Conflicto<br>- Demografía y Estadística aplicadas a las Ciencias Sociales<br>- Metodología para el Análisis de la Realidad Social<br><br>3º Año<br>- Política Exterior Argentina<br>- Derecho Internacional Público<br>- Idioma Extranjero (francés, o portugués, o chino mandarín, u otro)<br>- Organizaciones y Tribunales Internacionales<br>- Geopolítica Mundial Contemporánea<br>- Revolución tecnológica y Relaciones Internacionales<br>- Inglés I<br>- Administración y Derecho Administrativo<br>- Negociación y Resolución de Conflictos<br><br>4º Año<br>- Relaciones Internacionales Latinoamericanas<br>- Estudios sobre Globalización<br>- Internacionalización de la Justicia<br>- Problemáticas Socioambientales Globales<br>- Debates de Economía Política, Desarrollo y Comercio Internacional<br>- Inglés II<br>- Diplomacia y Práctica Profesional<br>- Escritura Académica<br>- Análisis de Acontecimientos Internacionales y Política Internacional<br>- Proyecto de Trabajo Final<br>- Trabajo Final"
+        ]
+      },
+      {
+        "tag": "carrera_abogacia",
+        "patterns": [
+          "¿Qué es la carrera de Abogacía?",
+          "Abogacía",
+          "Estudiar Abogacía",
+          "abogacia",
+          "carrera abogacia",
+          "abogacía",
+          "carrera abogaciía"
+          
+        ],
+        "responses": [
+          "La carrera de Abogacía es sobre entender las leyes y aprender a ayudar a personas y empresas con problemas legales. Durante la carrera, aprenderás sobre distintas áreas del derecho como los derechos constitucionales, leyes familiares, derecho penal, negocios y más. Los abogados pueden trabajar en bufetes, empresas o incluso por su cuenta. Necesitas entender bien las leyes, saber comunicarte y ser ético."
+        ]
+      },
+      {
+        "tag": "carrera_criminalistica",
+        "patterns": [
+          "¿que es la licenciatura en criminalística?",
+          "que es la carrera de criminalistica",
+          "criminalística",
+          "estudiar criminalística",
+          "criminalistica",
+          "estudiar criminalistica"
+        ],
+        "responses": [
+          "La Licenciatura en Criminalística se enfoca en aplicar conocimientos científicos y técnicos para investigar crímenes y proporcionar pruebas legales. Los licenciados en Criminalística recopilan, analizan y presentan evidencia en investigaciones criminales. Abarca disciplinas como ciencias forenses, criminalística de campo, análisis de evidencia, criminalística informática, medicina forense y más. Su trabajo es vital en la resolución de crímenes y el sistema de justicia."
+        ]
+      },
+      {
+        "tag": "carrera_relaciones_internacionales",
+        "patterns": [
+          "¿que es la Licenciatura en Relaciones Internacionales?",
+          "que es relaciones internacionales",
+          "relaciones internacionales",
+          "estudiar relaciones internacionales"
+        ],
+        "responses": [
+          "La Licenciatura en Relaciones Internacionales se centra en el estudio de las relaciones entre países, organizaciones internacionales y actores globales. Los estudiantes adquieren conocimientos y habilidades para comprender, analizar y abordar cuestiones internacionales, políticas globales y desafíos que enfrenta la comunidad internacional. Incluye políticas internacionales, economía global, derecho internacional, historia y geografía mundial, diplomacia, seguridad internacional, derechos humanos y desarrollo global, cultura y comunicación internacional, idiomas extranjeros, prácticas y experiencia internacional. Prepara para carreras en diplomacia, organizaciones internacionales, gobierno, empresas multinacionales, ONGs, periodismo internacional y más."
+        ]
+      },
+      {
+        "tag": "reconocimiento_titulo_abogacia",
+        "patterns": [
+          "¿mi título de abogacía es válido en otro país?",
+          "reconocimiento título abogado",
+          "reconocimiento titulo abogacia",
+          "ejercicio de la abogacía en otro país",
+          "¿mi titulo de abogacía es válido en otro pais?",
+          "reconocimiento del titulo de abogado en el extranjero",
+          "ejercicio de la abogacia en otro pais"
+        ],
+        "responses": [
+          "El título de abogacía obtenido en Argentina generalmente no es automáticamente válido para ejercer la abogacía en otros países. Cada país tiene sus propios requisitos y regulaciones para la práctica legal, y la admisión a la profesión de abogado en otro país por lo general implica cumplir con los estándares y procedimientos específicos de ese país. Si tienes la intención de ejercer la abogacía en otro país, es importante investigar y entender los requisitos y el proceso de reconocimiento de tu título en ese país en particular."
+        ]
+      },
+      {
+        "tag": "reconocimiento_titulo_criminalistica",
+        "patterns": [
+          "¿Mi título de Licenciado en Criminalística es reconocido en otros países?",
+          "validez  criminalista en el extranjero",
+          "reconocimiento título criminalista",
+          "Ejercicio de la criminalística en otro país"
+        ],
+        "responses": [
+          "El reconocimiento de un título de Licenciado en Criminalística de Argentina en otro país dependerá de las regulaciones y requisitos específicos del país al que desees trasladarte. Cada país tiene sus propios procedimientos y normativas para evaluar y reconocer títulos extranjeros. Es importante destacar que la profesión de criminalista puede variar en términos de regulación y práctica de un país a otro. Por lo tanto, es fundamental comprender y cumplir con los requisitos legales y profesionales del país en el que planeas ejercer. Asegúrate de realizar una investigación exhaustiva y comunicarte con las autoridades pertinentes en el país de destino para obtener información actualizada y precisa sobre el proceso de reconocimiento de tu título."
+        ]
+      },
+      {
+        "tag": "reconocimiento_titulo_relaciones_internacionales",
+        "patterns": [
+          "¿Mi título de Licenciado en Relaciones Internacionales es reconocido en otros países?",
+          "Validez del título de relaciones internacionales en el extranjero",
+          "Ejercicio de las relaciones internacionales en otro país"
+        ],
+        "responses": [
+          "El reconocimiento de un título de Licenciado en Relaciones Internacionales de Argentina en otro país dependerá de las regulaciones y requisitos específicos de ese país. Cada país tiene sus propias políticas y procedimientos para evaluar y validar títulos extranjeros. Es importante destacar que el campo de las relaciones internacionales puede variar en términos de regulación y práctica de un país a otro. Además, la carrera de Licenciatura en Relaciones Internacionales a menudo se centra en la comprensión de las relaciones internacionales y la política global, lo que puede tener aplicaciones en una variedad de campos y no estar necesariamente vinculada a una licencia específica."
+        ]
+      },
+      {
+        "tag": "duracion_carrera_abogacia",
+        "patterns": [
+          "duración de la carrera de abogacía",
+          "¿cuánto dura la abogacía?",
+          "tiempo para completar abogacía",
+          "duracion de la carrera de abogacia",
+          "duracion de abogacia",
+          "¿cuanto dura la abogacía?",
+          "tiempo para completar abogacia"
+        ],
+        "responses": [
+          "La carrera de abogacía tiene una duración de 5 años."
+        ]
+      },
+      {
+        "tag": "duracion_carrera_criminalistica",
+        "patterns": [
+          "duración de la carrera de licenciatura en criminalística",
+          "¿cuánto dura la licenciatura en criminalística?",
+          "tiempo para completar criminalística"
+        ],
+        "responses": [
+          "La carrera de Licenciatura en Criminalística tiene una duración de 4 años."
+        ]
+      },
+      {
+        "tag": "duracion_carrera_relaciones_internacionales",
+        "patterns": [
+          "duración de la carrera de licenciatura en relaciones internacionales",
+          "duración de relaciones internacionales",
+          "¿cuánto dura la licenciatura en relaciones internacionales?",
+          "tiempo para completar relaciones internacionales"
+        ],
+        "responses": [
+          "La carrera de Licenciatura en Relaciones Internacionales tiene una duración de 4 años."
+        ]
+      }, 
+            {
+        "tag": "becas",
+        "patterns": [
+          "becas",
+          "beca",
+          "tipo becas",
+          "que becas hay",
+          "becas disponible",
+          "obtener beca",
+          "informacion becas",
+          "becas disponibles",
+          "info beca"
+        ],
+        "responses": [
+          "Algunas becas disponible para los alumnos son:<br>Beca de ayuda económica<br>Beca de ayuda Especifica<br>Beca de comedor<br>Media Beca de Comedor<br>Beca Manuel Belgrano<br>Beca Progresar"
+        ]
+      },
+      {
+        "tag": "becas_ayuda_economica",
+        "patterns": [
+          "becas de ayuda economica",
+          "ayuda economica",
+          "¿cómo obtener ayuda económica?",
+          "requisitos para becas de ayuda económica",
+          "¿cómo obtener ayuda económica?"
+        ],
+        "responses": [
+          "La UNCA otorga la Beca de Ayuda Económica a los alumnos de 2° año en adelante que cursan una carrera universitaria y presentan obstáculos socioeconómicos para llevar adelante sus estudios. <br> Tipos de becas <br><br>"
+        ]
+      },
+      {
+        "tag": "becas_ayuda_economica_especifica",
+        "patterns": [
+          "becas de ayuda Especifica",
+          "ayuda Especifica",
+          "¿Cómo obtener ayuda económica específica?",
+          "requisitos becas de ayuda económica especifica"
+        ],
+        "responses": [
+          "La UNCA otorga la Beca de Ayuda Económica Específica a los alumnos ingresantes al sistema universitario que provengan del interior de la provincia y residan a más de 30 km de la ciudad capital."
+        ]
+      },
+      {
+        "tag": "becas_comedor",
+        "patterns": [
+          "becas de comedor",
+          "beca comedor",
+          "beca de comida",
+          "requisitos becas de comedor",
+          "requisitos comedor",
+          "requisitos becas de comida",
+          "¿Cómo obtener becas de comedor?",
+          "Requisitos para becas de comedor"
+        ],
+        "responses": [
+          "La UNCA ofrece a sus estudiantes universitarios Becas de Comedor, brindándoles almuerzo y cena de manera gratuita para contribuir con su bienestar."
+        ]
+      },
+      {
+        "tag": "becas_media_beca_comedor",
+        "patterns": [
+          "media Beca de Comedor",
+          "como obtener media beca de comedor?",
+          "requisitos media beca  comedor"
+        ],
+        "responses": [
+          "La Media Beca de Comedor está destinada a alumnos regulares de una carrera de grado y pregrado que se dicta en la UNCA o en las escuelas preuniversitarias Fray Mamerto Esquiú y E.N.E.T. Nº 1 “Prof. Vicente García Aguilera”."
+        ]
+      },
+      {
+        "tag": "becas_manuel_belgrano",
+        "patterns": [
+          "beca manuel belgrano",
+          "obtener becas Manuel Belgrano",
+          "requisitos becas belgrano",
+          "requisitos manuel belgrano",
+          "manuel belgrano",
+          "belgrano",
+          "requisitos de beca manuel belgrano"
+        ],
+        "responses": [
+          "El Programa de Becas Estratégicas Manuel Belgrano es un sistema de becas para promover el acceso, la permanencia y la finalización de estudios de grado y pregrado en ocho áreas de política pública consideradas clave para el desarrollo económico del país y la igualdad social."
+        ]
+      },
+      {
+        "tag": "becas_progresar",
+        "patterns": [
+          "beca progresar",
+          "¿Cómo obtener becas Progresar?",
+          "requisitos progresar",
+          "progresar"
+        ],
+        "responses": [
+          "El Programa de Respaldo para Estudiantes Argentinos (PROGRESAR) es un sistema de becas que pretende garantizar el derecho a la educación y fortalecer las trayectorias educativas de jóvenes que quieren formarse profesionalmente, finalizar su educación obligatoria o estén estudiando una carrera de nivel superior."
+        ]
+      },
+      {
+        "tag": "servicios_residencia_universitaria",
+        "patterns": [
+          "servicios de la residencia universitaria",
+          "residencia",
+          "residencia universitaria",
+          "¿Qué incluye la Casa del Estudiante Latinoamericano?",
+          "información sobre alojamiento estudiantil"
+        ],
+        "responses": [
+          "La Casa del Estudiante Latinoamericano ofrece habitaciones compartidas con baño privado, Sala de estudios, Sala de computación, Wifi, Cocina-Comedor, SUM, cobertura de emergencias médicas, servicios de seguridad, entre otros."
+        ]
+      },
+      {
+        "tag": "comedor_universitario",
+        "patterns": [
+          "¿Qué ofrece el Comedor Universitario?",
+          "comedor universitario",
+          "comedor",
+          "Información sobre alimentación en la universidad",
+          "Menú del comedor universitario"
+        ],
+        "responses": [
+          "El Comedor Universitario brinda comidas equilibradas y variadas a estudiantes universitarios y de escuelas preuniversitarias. Puedes acceder a becas completas o medias (ver sección becas). El menú incluye plato principal, postre, pan y agua potable. Está diseñado para cubrir tus necesidades diarias de calorías, proteínas, vitaminas y fibra. También promueve hábitos alimentarios saludables según las Guías Alimentarias para la Población Argentina, elaborado y controlado por profesionales en nutrición y calidad alimentaria. Además, es un lugar de encuentro con intervenciones educativas e informativas. Está ubicado en Av. Choya 150, frente a la plaza del Aviador, cerca del Predio Universitario, y está abierto de lunes a viernes para almuerzos de 12 a 14 hs y cenas de 21 a 23 hs."
+        ]
+      },
+      {
+        "tag": "servicio_salud_universitaria",
+        "patterns": [
+          "¿Qué ofrece el Servicio de Salud Universitaria?",
+          "Información sobre salud en la universidad",
+          "salud",
+          "Servicios médicos para estudiantes universitarios"
+        ],
+        "responses": [
+          "El Servicio de Salud Universitaria de la universidad tiene un papel fundamental en la comunidad estudiantil. Ofrece promoción de la salud y prevención de enfermedades. Su objetivo principal es educar para la prevención y empoderar a los jóvenes para que cuiden su salud. Brinda atención médica en diferentes especialidades como clínica médica, ginecología, obstetricia, psicología, nutrición y enfermería. También proporciona exámenes psicofísicos, programas de prevención de enfermedades y promoción de la salud, así como asesoría en salud sexual y reproductiva. Además, participa en el Programa Nacional de Inmunizaciones, garantizando el acceso a vacunas gratuitas y obligatorias. Puedes encontrar el servicio en el subsuelo del Patio Este de la Facultad de Humanidades en el Predio Universitario. Para más información, puedes comunicarte al Teléfono: (54) 0383-4430657 - Int. 138."
+        ]
+      },
+      {
+        "tag": "direccion_deportes",
+        "patterns": [
+          "información sobre Dirección de Deportes en la universidad",
+          "deportes en el predio universitario",
+          "actividades deportivas para estudiantes universitarios"
+        ],
+        "responses": [
+          "La Dirección de Deportes ofrece una amplia variedad de actividades deportivas, recreativas y sociales para niños, jóvenes y adultos de la comunidad universitaria y la sociedad en general. Estas actividades incluyen ligas universitarias de fútbol, futsal, vóley, básquetbol, hockey, gimnasia localizada, acondicionamiento físico, gym, aero box y danzas clásicas. También hay escuelas de formación deportiva para futbol infantil, mini vóley, básquetbol, baby ballet, patín artístico y tenis de mesa. Todas las actividades cuentan con la guía de profesores especializados. Puedes encontrar la Dirección de Deportes en Maximio Victoria Nº 55 en el Predio Universitario. Para más información, puedes comunicarte al Tel: (54-3833)4430657 Int. 148 o a través de las redes sociales: Facebook: Bienestar Universitario Unca e Instagram: bienestar_universitario_unca."
+        ]
+      },
+      {
+        "tag": "razones_estudiar_abogacia",
+        "patterns": [
+          "por qué estudiar abogacia?",
+          "por que estudiar abogacia",
+          "motivos para estudiar derecho",
+          "ventajas de ser abogado",
+          "por que estudiar abogacia",
+          "estudiar abogacia"
+          
+
+        ],
+        "responses": [
+          "Estudiar Derecho es una decisión que puede ser motivada por una variedad de razones personales y profesionales. Aquí te presento una de las razones más comunes por las que las personas eligen estudiar Derecho: **Interés en la justicia** Muchas personas se sienten atraídas por el estudio del Derecho debido a su interés en comprender y contribuir a la administración de justicia. Quieren ser parte del sistema legal y trabajar para garantizar que se apliquen leyes justas y equitativas."
+        ]
+      },
+      {
+        "tag": "razones_estudiar_criminalistica",
+        "patterns": [
+          "¿por que estudiar criminalística?",
+          "por que estudiar criminalistica",
+          "estudiar criminalistica",
+          "Motivos para estudiar Criminalística",
+          "Ventajas de ser criminalista"
+        ],
+        "responses": [
+          "Estudiar Criminalística es una opción educativa que atrae a muchas personas debido a su interés en el mundo de la investigación criminal y la resolución de delitos. Aquí te presento una de las razones más comunes por las que alguien podría elegir estudiar Criminalística: **Interés en la justicia y la resolución de crímenes**."
+        ]
+      },
+      {
+        "tag": "razones_estudiar_relaciones_internacionales",
+        "patterns": [
+          "¿por que estudiar relaciones internacionales?",
+          "por que estudiar relaciones internacionales",
+          "estudiar relaciones internacionales",
+          "estudiar relaciones internacionales",
+          "motivos para estudiar relaciones internacionales",
+          "ventajas de ser internacionalista"
+        ],
+        "responses": [
+          "Estudiar Relaciones Internacionales es una elección educativa que atrae a muchas personas debido a su interés en comprender y analizar las dinámicas globales, la política internacional y las relaciones entre países. Aquí te presento una de las razones más comunes por las que alguien podría optar por estudiar Relaciones Internacionales: **Interés en asuntos globales** Si te interesa el mundo y las cuestiones globales, estudiar Relaciones Internacionales te permitirá explorar y comprender los desafíos y las oportunidades que enfrenta la comunidad internacional."
+        ]
+      },
+      {
+        "tag": "historia_facultad_derecho",
+        "patterns": [
+          "historia Facultad de Derecho",
+          "historia Facultad derecho",
+          "creación de escuela de derecho",
+          "desarrollo de la carrera de abogacía en la Universidad Nacional de Catamarca"
+        ],
+        "responses": [
+          "La Escuela de Derecho de la Universidad Nacional de Catamarca fue creada el 19 de marzo de 1991 y oficialmente inaugurada el 13 de mayo de 1991. Se implementaron progresivamente los cursos de 2° y 3° año en el ciclo académico 1992 y 1993, autorizado por Ordenanza N° 0001/91. En 1994, se dispuso implementar el 4to. año de la Carrera de Abogacía, y en 1996 se implementó el 5to. año. Finalmente, en 1997 se inauguraron las actividades académicas del 6to. año, completando así la Carrera de Abogacía de la UNCA."
+        ]
+      },
+      
+      {
+        "tag": "como_estas",
+        "patterns": [
+          "¿como estas?",
+          "¿cómo estás?",
+          "como estas",
+          "cómo estás"
+        ],
+        "responses": [
+          "yo estoy bien y espero que vos tambien =)"
+        ]
+      },
+      
+      {
+        "tag": "chiste",
+        "patterns": [
+          "me contas un chiste",
+          "chiste",
+          "contame un chiste",
+          "sabes un chiste"
+        ],
+        "responses": [
+          "¿Por qué no se puede jugar a la escondida con abogados/as? <br> Porque siempre encuentran una salida =)",
+          "Un profesor le pregunta a un alumno:<br>- ¿Arroz es con S o Z?<br>Y el alumno le contesta:<br>- Aquí en la escuela no lo sé, profesor, pero en mi casa es con tomate."
+        ]
+      },
+
+      {
+        "tag": "cancion",
+        "patterns": [
+          "te gusta la música",
+          "que cancion te gusta",
+          "canción favorita",
+          "otra cancion",
+          "musica favorita"
+        ],
+        "responses": [
+          "si mi canción favorita es <iframe style='border-radius:12px' src='https://open.spotify.com/embed/track/3Ne5uYDFzHEFYAPbaBMIck?utm_source=generator' width='100%' height='100' frameBorder='0' allowfullscreen='' allow='autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture' loading='lazy'></iframe>",
+          "si mi canción favorita es <iframe style='border-radius:12px' src='https://open.spotify.com/embed/track/1iLbUmb2b2btyAAcQ68a1p?utm_source=generator' width='100%' height='100' frameBorder='0' allowfullscreen='' allow='autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture' loading='lazy'></iframe>"
+        ]
+      },
+
+      {
+        "tag": "ubicacion_facultad",
+        "patterns": [
+          "ubicacion",
+          "ubicación",
+          "direccion",
+          "dirección",
+          "ubicación facultad",
+          "ubicacion facultad",
+          "ubicada facultad"
+        ],
+        "responses": [
+          "La dirección de la Facultad de Derecho es Av. Maximio Victoria 55 en SFV de Catamarca"
+          
+        ]
+      },
+
+      {
+        "tag": "felicitacion",
+        "patterns": [
+          "felicitacion",
+          "felicitaciones",
+          "bien",
+          "ok",
+          "que bueno",
+          "genial",
+          "genio",
+          "bueno",
+          "gracias"
+        ],
+        "responses": [
+          "Genial poder haberte ayudado"
+          
+        ]
+      },
+
+      {
+        "tag": "horario",
+        "patterns": [
+          "horario",
+          "Horario",
+          "hora",
+          "abierto",
+          "abierta"
+        ],
+        "responses": [
+          "El horario de atención es Lunes a viernes de 8 a 13 y de 16 a 20:30"
+        ]
+      },
+
+      {
+        "tag": "constitucion_nacional",
+        "patterns": [
+          "constitucion nacional",
+          "constitución nacional",
+          "link constitución nacional",
+          "link constitución",
+          "archivo constitución nacional",
+          "archivo constitución",
+          "constitucion",
+          "constitución"
+        ],
+        "responses": [
+          "<a href='https://www.argentina.gob.ar/sites/default/files/derechoshumanos_publicaciones_colecciondebolsillo_01_constitucion_nacion_argentina.pdf' target='_blank'>Constitución de la Nación Argentina</a>"
+        ]
+      },
+
+      {
+        "tag": "examen_final",
+        "patterns": [
+          "examen",
+          "examen finaL",
+          "fecha examen finaL",
+          "mesa examen final",
+          "fecha finales",
+          "finales",
+          "final"
+        ],
+        "responses": [
+          "<img src='http://127.0.0.1:8000/static/image/examen.png' width='200' height='200' />"
+        ]
+      },
+
+      {
+        "tag": "teoria_del_estado",
+        "patterns": [
+          "teoria del estado",
+          "teoria estado",
+          "hora teoria del estado",
+          "horario teoria estado"
+        ],
+        "responses": [
+          "<img src='http://127.0.0.1:8000/static/image/teoriadelestado.png' width='200' height='200' />"
+        ]
+      },
+
+      {
+        "tag": "carreras_facultad_derecho",
+        "patterns": [
+          "cantidad carreras",
+          "que estudiar",
+          "que estudiar en su facultad",
+          "carreras de la facultad",
+          "estudiar"
+        ],
+        "responses": [
+          "En nuestra facultad podés estudiar estas carreras:<br><br>Abogacía<br>Licenciatura en Criminalística<br>Licenciatura en Relaciones Internacionales"
+        ]
+      }
+      
   ]
 }
