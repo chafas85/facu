@@ -5,20 +5,28 @@
     }
 
     * {
-      margin: 0;
-      padding: 0;
-      font-family: sans-serif;
+      margin: 0px;
+      position: relative;
+      font-family: 'Montserrat';
       box-sizing: border-box;
     }
 
 
+    body {
+      height: 100vh;
+      background-image: url("http://127.0.0.1:8000/static/image/bg1.svg");
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
 
+    
     .showBot {
-      position: absolute;
-      right: 30px;
+      position: relative;
+      right: 0px auto;
+      left: 0px auto;
       /*Right and bottom are set to position the chat bot window in the right-corner of the screen*/
-      bottom: 25px;
-      padding: 10px 40px 10px 37px;
+      bottom: -80px;
+      padding: 0px 0px 0px 0px;
       font-size: 18px;
       border: none;
       border-radius: var(--chatBot_windowCommonRadius);
@@ -30,15 +38,22 @@
     }
 
     .container {
+
       position: absolute;
-      right: 30px;
-      /*Right and bottom are set to position the chat bot window in the right-corner of the screen*/
-      bottom: 60px;
-      width: 450px;
-      height: 80vh;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      margin: auto;
+
+      padding: 0px 0px 0px 0px;
       display: flex;
+      /*Right and bottom are set to position the chat bot window in the right-corner of the screen*/
+      bottom: 0px;
+      width: 450px;
+      height: 70vh;
       flex-direction: column;
-      box-shadow: 1px 1px 6px #616161;
+      box-shadow: 1px 1px 1px #616161;
       background-color: #9900FF;
       border: 2px solid #9900FF;
       border-radius: var(--chatBot_windowCommonRadius);
