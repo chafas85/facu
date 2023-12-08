@@ -31,7 +31,7 @@ body {
     right: 0;
     width: 100%;
     height: 420px;
-    background-image: url('http://127.0.0.1:8000/static/image/bg2.png');
+    background-image: url('https://facu-production.up.railway.app/static/image/bg2.png');
     background-position: top;
     background-size: cover;
     z-index: -11;
