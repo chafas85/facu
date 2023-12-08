@@ -14,7 +14,7 @@
 
     body {
       height: 100vh;
-      background-image: url("http://127.0.0.1:8000/static/image/bg1.svg");
+      background-image: url("https://facu-production.up.railway.app/static/image/bg1.svg");
       background-size: cover;
       background-repeat: no-repeat;
     }
