@@ -708,7 +708,7 @@
           "final"
         ],
         "responses": [
-          "<img src='http://127.0.0.1:8000/static/image/examen.png' width='200' height='200' />"
+          "<img src='https://facu-production.up.railway.app/static/image/examen.png' width='200' height='200' />"
         ]
       },
 
@@ -721,7 +721,7 @@
           "horario teoria estado"
         ],
         "responses": [
-          "<img src='http://127.0.0.1:8000/static/image/teoriadelestado.png' width='200' height='200' />"
+          "<img src='https://facu-production.up.railway.app/static/image/teoriadelestado.png' width='200' height='200' />"
         ]
       },
 
