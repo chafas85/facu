@@ -1,11 +1,4 @@
-# Aapi (Artificial Intelligence ChatBot)
-Aapi (or âpi) is derived from 'Sanskrit Literature', meaning : Friend, associate or acquaintance. 
-
-Aapi is a machine learning based intelligent chatbot designed to provide human-like conversation. 
-Chatbot is created with intention to shorten the gap between business and customer. Similarly Aapi initially is build to increase educational efficiency by reducing the gap between a student and college. 
-
-Aapi is build with passion and love by 3 friendson 12th April 2022.
-
+# jony 
 # Technologies Used:
 - Python3
 - Django Framework
@@ -15,8 +8,7 @@ Aapi is build with passion and love by 3 friendson 12th April 2022.
 - HTML, CSS
 - JavaScript
 
-# How to run ChatBot on your computer 🤔
-
+# 
 - Install the required packages.
 ```
 pip install -r requirements.txt
